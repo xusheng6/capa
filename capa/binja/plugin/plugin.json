@@ -1,0 +1,18 @@
+{
+  "name": "FLARE capa explorer",
+  "type": ["ui"],
+  "api": ["python3"],
+  "pluginmetadataversion": 2,
+  "description": "Binary Ninja plugin for the FLARE team's capa tool to identify capabilities in executable files",
+  "longdescription": "capa is a framework that uses a well-defined collection of rules to identify capabilities in a program. You can run capa against a PE file, ELF file, or shellcode and it tells you what it thinks the program can do. For example, it might suggest that the program is a backdoor, can install services, or relies on HTTP to communicate. capa explorer runs capa analysis on your Binary Ninja database without needing access to the original binary file.",
+  "license": {
+    "name": "Apache License 2.0",
+    "text": "Copyright 2020 Google LLC. Licensed under the Apache License, Version 2.0."
+  },
+  "dependencies": {
+    "pip": ["flare-capa"]
+  },
+  "version": "1.0.0",
+  "author": "FLARE Team",
+  "minimumbinaryninjaversion": 3000
+}

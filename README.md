@@ -286,12 +286,26 @@ rule:
 The [github.com/mandiant/capa-rules](https://github.com/mandiant/capa-rules) repository contains hundreds of standard rules that are distributed with capa.
 Please learn to write rules and contribute new entries as you find interesting techniques in malware.
 
-# IDA Pro plugin: capa explorer
+# Disassembler plugins
+
+## IDA Pro plugin: capa explorer
 If you use IDA Pro, then you can use the [capa explorer](https://github.com/mandiant/capa/tree/master/capa/ida/plugin) plugin.
 capa explorer helps you identify interesting areas of a program and build new capa rules using features extracted directly from your IDA Pro database.
 It also uses your local changes to the .idb to extract better features, such as when you rename a global variable that contains a dynamically resolved API address.
 
 ![capa + IDA Pro integration](https://github.com/mandiant/capa/blob/master/doc/img/explorer_expanded.png)
+
+## Binary Ninja plugin: capa explorer
+If you use Binary Ninja, you can use the [capa explorer](https://github.com/mandiant/capa/tree/master/capa/binja/plugin) plugin.
+capa explorer helps you identify interesting areas of a program using capa rule analysis directly within Binary Ninja.
+
+The plugin provides:
+- Interactive capa analysis within Binary Ninja
+- Rule match exploration and navigation
+- Background analysis processing  
+- Integration with Binary Ninja's UI
+
+Check out [the plugin documentation](https://github.com/mandiant/capa/tree/master/capa/binja/plugin) for setup and usage instructions.
 
 # Ghidra integration
 
